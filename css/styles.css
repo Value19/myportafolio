@@ -1,0 +1,72 @@
+/* Navbar fija */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 1000;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+  
+nav ul li a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+nav ul li a:hover {
+    color: #ff4081;
+}
+  
+  /* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+  
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+  
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+  
+.project-card:hover {
+    transform: scale(1.05);
+}
+  
+.project-info {
+    padding: 15px;
+}
+  
+  /* Parallax */
+.parallax {
+    background-image: url('../images/contact-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+  
